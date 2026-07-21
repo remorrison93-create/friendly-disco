@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$logo_url = NITRO_K9_CONTEST_URL . 'assets/images/nitro-k9-contest/assets/images/Copy of NITRO K-9.png';
+$logo_url = NITRO_K9_CONTEST_URL . 'assets/images/nitro-k9-contest/assets/images/logo.png';
 
 $format_date = function ( $raw ) {
 	try {
