@@ -1,0 +1,485 @@
+/* Nitro K-9 "Art of the Leash" Clip Contest -- brand styles
+   Brand colors: #1e1e1e (black), #272727 (charcoal), #F1592A (orange)
+   Headings: Bebas Neue | Body: Inter
+   Note: this stylesheet assumes "Beana's Neue" refers to Bebas Neue (a common
+   Google Font). If Nitro K-9 has a different licensed display font, swap the
+   --nk9-font-heading value and @font-face block below for the real files. */
+
+.nk9-contest {
+	--nk9-black: #1e1e1e;
+	--nk9-charcoal: #272727;
+	--nk9-orange: #f1592a;
+	--nk9-orange-dark: #d1451c;
+	--nk9-white: #ffffff;
+	--nk9-grey-100: #f5f5f4;
+	--nk9-grey-300: #d8d6d4;
+	--nk9-grey-600: #6f6c69;
+	--nk9-font-heading: 'Bebas Neue', 'Inter', Impact, sans-serif;
+	--nk9-font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--nk9-radius: 10px;
+	--nk9-max-width: 1100px;
+
+	font-family: var(--nk9-font-body);
+	color: var(--nk9-black);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+.nk9-contest * {
+	box-sizing: border-box;
+}
+
+.nk9-contest img {
+	max-width: 100%;
+	display: block;
+}
+
+.nk9-container {
+	max-width: var(--nk9-max-width);
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.nk9-container--narrow {
+	max-width: 760px;
+}
+
+.nk9-section {
+	padding: 64px 0;
+}
+
+.nk9-section--dark {
+	background: var(--nk9-charcoal);
+	color: var(--nk9-white);
+}
+
+.nk9-section__title {
+	font-family: var(--nk9-font-heading);
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	font-size: clamp(1.75rem, 4vw, 2.5rem);
+	margin: 0 0 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Hero */
+
+.nk9-hero {
+	background: var(--nk9-black);
+	color: var(--nk9-white);
+	padding: 72px 0;
+	text-align: center;
+	background-image: radial-gradient(circle at 50% 0%, #333 0%, var(--nk9-black) 60%);
+}
+
+.nk9-hero__logo {
+	max-width: 160px;
+	margin: 0 auto 24px;
+}
+
+.nk9-hero__eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-size: 0.85rem;
+	color: var(--nk9-orange);
+	margin: 0 0 8px;
+	font-weight: 600;
+}
+
+.nk9-hero__title {
+	font-family: var(--nk9-font-heading);
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: clamp(2.5rem, 8vw, 4.5rem);
+	line-height: 1.05;
+	margin: 0 0 16px;
+	letter-spacing: 0.02em;
+}
+
+.nk9-hero__title span {
+	color: var(--nk9-orange);
+	display: block;
+}
+
+.nk9-hero__dates {
+	font-weight: 600;
+	color: var(--nk9-grey-300);
+	margin: 0 0 20px;
+}
+
+.nk9-hero__sub {
+	max-width: 560px;
+	margin: 0 auto 32px;
+	color: var(--nk9-grey-300);
+	font-size: 1.05rem;
+}
+
+/* Buttons */
+
+.nk9-btn {
+	display: inline-block;
+	font-family: var(--nk9-font-body);
+	font-weight: 600;
+	font-size: 1rem;
+	padding: 14px 32px;
+	border-radius: var(--nk9-radius);
+	text-decoration: none;
+	border: 2px solid transparent;
+	cursor: pointer;
+	transition: background-color 0.15s ease, transform 0.1s ease, color 0.15s ease;
+}
+
+.nk9-btn:hover {
+	transform: translateY(-1px);
+}
+
+.nk9-btn--primary {
+	background: var(--nk9-orange);
+	color: var(--nk9-white);
+}
+
+.nk9-btn--primary:hover {
+	background: var(--nk9-orange-dark);
+	color: var(--nk9-white);
+}
+
+.nk9-btn--outline {
+	background: transparent;
+	border-color: var(--nk9-orange);
+	color: var(--nk9-orange);
+	margin-top: 16px;
+}
+
+.nk9-btn--outline:hover {
+	background: var(--nk9-orange);
+	color: var(--nk9-white);
+}
+
+.nk9-btn--block {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.nk9-btn[disabled] {
+	opacity: 0.6;
+	cursor: not-allowed;
+	transform: none;
+}
+
+/* Steps */
+
+.nk9-steps {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+	text-align: center;
+}
+
+.nk9-step h3 {
+	font-family: var(--nk9-font-heading);
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	font-size: 1.4rem;
+	margin: 12px 0 8px;
+}
+
+.nk9-step p {
+	color: var(--nk9-grey-600);
+	margin: 0;
+}
+
+.nk9-step__num {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: var(--nk9-orange);
+	color: var(--nk9-white);
+	font-family: var(--nk9-font-heading);
+	font-size: 1.4rem;
+}
+
+@media (min-width: 720px) {
+	.nk9-steps {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Prizes */
+
+.nk9-prizes {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+
+@media (min-width: 720px) {
+	.nk9-prizes {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.nk9-prize-card {
+	background: var(--nk9-black);
+	border: 1px solid #3a3a3a;
+	border-radius: var(--nk9-radius);
+	padding: 32px;
+}
+
+.nk9-prize-card--grand {
+	border-color: var(--nk9-orange);
+	box-shadow: 0 0 0 1px var(--nk9-orange);
+}
+
+.nk9-prize-card__tag {
+	display: inline-block;
+	background: var(--nk9-orange);
+	color: var(--nk9-white);
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	padding: 4px 10px;
+	border-radius: 999px;
+	margin-bottom: 12px;
+}
+
+.nk9-prize-card h3 {
+	font-family: var(--nk9-font-heading);
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin: 0 0 12px;
+}
+
+.nk9-prize-card p {
+	color: var(--nk9-grey-300);
+}
+
+.nk9-prize-card__value {
+	color: var(--nk9-white) !important;
+	font-weight: 700;
+}
+
+.nk9-prize-card__note {
+	font-size: 0.9rem;
+}
+
+.nk9-prizes__footnote {
+	text-align: center;
+	color: var(--nk9-grey-300);
+	font-size: 0.85rem;
+	margin-top: 24px;
+}
+
+.nk9-section:not(.nk9-section--dark) .nk9-prizes__footnote {
+	color: var(--nk9-grey-600);
+}
+
+/* Form */
+
+.nk9-alert {
+	padding: 16px 20px;
+	border-radius: var(--nk9-radius);
+	margin-bottom: 24px;
+	font-size: 0.95rem;
+}
+
+.nk9-alert--success {
+	background: #e9f7ef;
+	border: 1px solid #a3d9b8;
+	color: #1e5631;
+}
+
+.nk9-alert--error {
+	background: #fdeceb;
+	border: 1px solid #f2b5ab;
+	color: #8a2c1d;
+}
+
+.nk9-form {
+	background: var(--nk9-white);
+	border: 1px solid var(--nk9-grey-300);
+	border-radius: var(--nk9-radius);
+	padding: 32px;
+}
+
+.nk9-form__row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+@media (min-width: 560px) {
+	.nk9-form__row {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.nk9-field {
+	margin-bottom: 20px;
+}
+
+.nk9-field label,
+.nk9-field legend {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	padding: 0;
+}
+
+.nk9-field input[type='text'],
+.nk9-field input[type='email'],
+.nk9-field input[type='url'],
+.nk9-field input[type='file'] {
+	width: 100%;
+	padding: 12px 14px;
+	border: 1px solid var(--nk9-grey-300);
+	border-radius: 8px;
+	font-family: var(--nk9-font-body);
+	font-size: 1rem;
+	background: var(--nk9-white);
+}
+
+.nk9-field input:focus {
+	outline: none;
+	border-color: var(--nk9-orange);
+	box-shadow: 0 0 0 3px rgba(241, 89, 42, 0.2);
+}
+
+.nk9-field__hint {
+	font-size: 0.85rem;
+	color: var(--nk9-grey-600);
+	margin: 6px 0 0;
+}
+
+.nk9-method__toggle {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.nk9-method__option {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-weight: 500;
+}
+
+.nk9-agree label {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	font-weight: 400;
+	font-size: 0.9rem;
+}
+
+.nk9-agree input {
+	margin-top: 4px;
+}
+
+.nk9-agree a {
+	color: var(--nk9-orange-dark);
+}
+
+.nk9-honeypot {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+/* Referral section */
+
+.nk9-referral__list {
+	padding-left: 20px;
+}
+
+.nk9-referral__list li {
+	margin-bottom: 12px;
+	color: var(--nk9-grey-300);
+}
+
+.nk9-referral__list a {
+	color: var(--nk9-orange);
+}
+
+/* Rules / legal */
+
+.nk9-rules {
+	border: 1px solid var(--nk9-grey-300);
+	border-radius: var(--nk9-radius);
+	margin-bottom: 16px;
+	overflow: hidden;
+}
+
+.nk9-rules summary {
+	cursor: pointer;
+	padding: 18px 20px;
+	font-weight: 700;
+	background: var(--nk9-grey-100);
+	list-style: none;
+}
+
+.nk9-rules summary::-webkit-details-marker {
+	display: none;
+}
+
+.nk9-rules summary::before {
+	content: '+';
+	display: inline-block;
+	width: 1.2em;
+	color: var(--nk9-orange);
+	font-weight: 700;
+}
+
+.nk9-rules[open] summary::before {
+	content: '\2212';
+}
+
+.nk9-rules__body {
+	padding: 8px 24px 24px;
+	font-size: 0.92rem;
+	color: var(--nk9-grey-600);
+}
+
+.nk9-rules__list h4 {
+	font-family: var(--nk9-font-heading);
+	letter-spacing: 0.02em;
+	color: var(--nk9-black);
+	margin: 0 0 6px;
+	font-size: 1.05rem;
+}
+
+.nk9-rules__list > li {
+	margin-bottom: 20px;
+}
+
+.nk9-rules__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 12px 0;
+	font-size: 0.88rem;
+}
+
+.nk9-rules__table th,
+.nk9-rules__table td {
+	border: 1px solid var(--nk9-grey-300);
+	padding: 10px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.nk9-rules__table th {
+	background: var(--nk9-grey-100);
+}
+
+.nk9-legal-disclaimer {
+	font-size: 0.8rem;
+	color: var(--nk9-grey-600);
+	margin-top: 16px;
+}
