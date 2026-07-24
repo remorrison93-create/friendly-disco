@@ -34,11 +34,11 @@
 	display: block;
 }
 
-.nk9-contest a {
+.nk9-contest a:not(.nk9-btn) {
 	color: var(--nk9-orange);
 }
 
-.nk9-contest a:hover {
+.nk9-contest a:not(.nk9-btn):hover {
 	color: var(--nk9-orange-dark);
 }
 
@@ -115,7 +115,7 @@
 
 .nk9-hero__sub {
 	max-width: 560px;
-	margin: 0 auto 48px;
+	margin: 0 auto 48px !important;
 	color: var(--nk9-grey-300);
 	font-size: 1.05rem;
 }
