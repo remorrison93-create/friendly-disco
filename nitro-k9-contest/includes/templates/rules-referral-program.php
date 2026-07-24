@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <ol class="nk9-rules__list">
 	<li>
 		<h4>Sponsor</h4>
-		<p>This drawing is sponsored by Nitro K-9 LLC, located in Bothell, Washington. The prize is provided by The Hound &amp; The Human (Bex Mare), as an independent contractor.</p>
+		<p>This drawing is sponsored by Nitro K-9 LLC, located in Bothell, Washington. The prize is provided by <a href="https://www.instagram.com/houndandthehuman/" target="_blank" rel="noopener noreferrer">The Hound &amp; The Human</a> (Bex Mare), as an independent contractor.</p>
 	</li>
 	<li>
 		<h4>Eligibility</h4>

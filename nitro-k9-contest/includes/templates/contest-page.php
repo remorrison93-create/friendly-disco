@@ -42,7 +42,7 @@ $v = wp_parse_args(
 			<p class="nk9-hero__eyebrow">Nitro K-9 LLC Presents</p>
 			<h1 class="nk9-hero__title">Art of the Leash <span>Clip Contest</span></h1>
 			<p class="nk9-hero__dates"><?php echo esc_html( $entry_start_display ); ?> &ndash; <?php echo esc_html( $entry_end_display ); ?> (Pacific Time)</p>
-			<p class="nk9-hero__sub">Show off what you and your dog have learned together &mdash; win custom hand-drawn or painted portrait artwork by <strong>The Hound &amp; The Human</strong>.</p>
+			<p class="nk9-hero__sub">Show off what you and your dog have learned together, and win custom hand-drawn or painted portrait artwork by <strong><a href="https://www.instagram.com/houndandthehuman/" target="_blank" rel="noopener noreferrer">The Hound &amp; The Human</a></strong>.</p>
 			<a href="#nk9-contest-form" class="nk9-btn nk9-btn--primary">Enter the Contest</a>
 		</div>
 	</section>
@@ -59,7 +59,7 @@ $v = wp_parse_args(
 				<div class="nk9-step">
 					<span class="nk9-step__num">2</span>
 					<h3>Post or Submit</h3>
-					<p>Post publicly on Instagram &mdash; tag <strong><?php echo esc_html( $settings['instagram_handle'] ); ?></strong> and use <strong><?php echo esc_html( $settings['hashtag'] ); ?></strong> &mdash; or submit your clip directly below.</p>
+					<p>Post publicly on Instagram, tag <strong><?php echo esc_html( $settings['instagram_handle'] ); ?></strong> and use <strong><?php echo esc_html( $settings['hashtag'] ); ?></strong>, or submit your clip directly below.</p>
 				</div>
 				<div class="nk9-step">
 					<span class="nk9-step__num">3</span>
@@ -77,14 +77,14 @@ $v = wp_parse_args(
 				<div class="nk9-prize-card nk9-prize-card--grand">
 					<span class="nk9-prize-card__tag">Grand Prize</span>
 					<h3>Custom Portrait or Painting</h3>
-					<p>Your choice of a black &amp; grey hand-drawn portrait or a full-color painting of you and your dog, created by Artist Bex Mare of The Hound &amp; The Human.</p>
+					<p>Your choice of a black &amp; grey hand-drawn portrait or a full-color painting of you and your dog, created by Artist Bex Mare of <a href="https://www.instagram.com/houndandthehuman/" target="_blank" rel="noopener noreferrer">The Hound &amp; The Human</a>.</p>
 					<p class="nk9-prize-card__value">Approx. Retail Value: $500</p>
-					<p class="nk9-prize-card__note">Selected by Sponsor/Artist based on training quality, video clarity, and overall impression &mdash; a merit-based selection, not a random drawing.</p>
+					<p class="nk9-prize-card__note">Selected by Sponsor/Artist based on training quality, video clarity, and overall impression. This is a merit-based selection, not a random drawing.</p>
 				</div>
 				<div class="nk9-prize-card">
 					<span class="nk9-prize-card__tag">Second Place</span>
 					<h3>Custom Full-Color Painting</h3>
-					<p>A full-color painting of you and your dog, created by Artist Bex Mare of The Hound &amp; The Human.</p>
+					<p>A full-color painting of you and your dog, created by Artist Bex Mare of <a href="https://www.instagram.com/houndandthehuman/" target="_blank" rel="noopener noreferrer">The Hound &amp; The Human</a>.</p>
 					<p class="nk9-prize-card__value">Approx. Retail Value: $100</p>
 					<p class="nk9-prize-card__note">Awarded by random drawing among eligible entries not selected for the Grand Prize.</p>
 				</div>
@@ -181,7 +181,7 @@ $v = wp_parse_args(
 			<h2 class="nk9-section__title">Referral Program Drawing</h2>
 			<p>Nitro K-9 Telegram group members can also earn entries into a separate $500 portrait drawing just by referring new clients:</p>
 			<ul class="nk9-referral__list">
-				<li><strong>Refer a friend:</strong> have them list your name in the "How did you hear about us" field at <a href="https://www.nitrocanine.com" target="_blank" rel="noopener noreferrer">nitrocanine.com</a> to earn one entry &mdash; no limit on referrals.</li>
+				<li><strong>Refer a friend:</strong> have them list your name in the "How did you hear about us" field at <a href="https://www.nitrocanine.com" target="_blank" rel="noopener noreferrer">nitrocanine.com</a> to earn one entry (no limit on referrals).</li>
 				<li><strong>No referral? No problem:</strong> leave a Google Review or email a short testimonial to <a href="mailto:admin@nitrocanine.com">admin@nitrocanine.com</a>, then notify us in the Telegram group with <?php echo esc_html( $settings['hashtag'] ); ?> to log your entry.</li>
 			</ul>
 			<?php if ( ! empty( $settings['telegram_group_url'] ) ) : ?>
@@ -196,14 +196,14 @@ $v = wp_parse_args(
 			<h2 class="nk9-section__title">Official Rules</h2>
 
 			<details class="nk9-rules">
-				<summary>Official Rules &mdash; "Art of the Leash" Clip Contest</summary>
+				<summary>Official Rules: "Art of the Leash" Clip Contest</summary>
 				<div class="nk9-rules__body">
 					<?php include NITRO_K9_CONTEST_DIR . 'includes/templates/rules-clip-contest.php'; ?>
 				</div>
 			</details>
 
 			<details class="nk9-rules">
-				<summary>Official Rules &mdash; Referral Program Drawing</summary>
+				<summary>Official Rules: Referral Program Drawing</summary>
 				<div class="nk9-rules__body">
 					<?php include NITRO_K9_CONTEST_DIR . 'includes/templates/rules-referral-program.php'; ?>
 				</div>

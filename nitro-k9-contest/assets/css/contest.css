@@ -34,6 +34,14 @@
 	display: block;
 }
 
+.nk9-contest a {
+	color: var(--nk9-orange);
+}
+
+.nk9-contest a:hover {
+	color: var(--nk9-orange-dark);
+}
+
 .nk9-container {
 	max-width: var(--nk9-max-width);
 	margin: 0 auto;
@@ -455,7 +463,7 @@
 .nk9-rules__list h4 {
 	font-family: var(--nk9-font-heading);
 	letter-spacing: 0.02em;
-	color: var(--nk9-black);
+	color: var(--nk9-white) !important;
 	margin: 0 0 6px;
 	font-size: 1.05rem;
 }
