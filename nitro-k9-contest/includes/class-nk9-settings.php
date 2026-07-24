@@ -13,7 +13,7 @@ class NK9_Settings {
 			'entry_start'          => '2026-07-24 00:00:00',
 			'entry_end'            => '2026-08-19 23:59:59',
 			'max_entries_per_dog'  => 3,
-			'max_video_mb'         => 500,
+			'max_video_mb'         => 200,
 			'instagram_handle'     => '@nitrok9',
 			'hashtag'              => '#NitroK9Giveaway',
 			'telegram_group_url'   => '',
