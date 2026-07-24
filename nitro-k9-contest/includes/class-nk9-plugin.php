@@ -55,14 +55,11 @@ class NK9_Plugin {
 	}
 
 	public function enqueue_assets() {
-		global $post;
-
-		$has_shortcode = is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'nitro_k9_contest' );
-
-		if ( ! $has_shortcode ) {
-			return;
-		}
-
+		// Loaded on every front-end page rather than gated on has_shortcode()
+		// detecting [nitro_k9_contest] in $post->post_content: some page
+		// builders/themes store block content in ways that check misses,
+		// which silently drops all styling. Everything here is scoped under
+		// .nk9-contest, so loading it site-wide is harmless.
 		wp_enqueue_style(
 			'nk9-contest-fonts',
 			'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap',

@@ -11,8 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$logo_url = NITRO_K9_CONTEST_URL . 'assets/images/logo.png';
-
 $format_date = function ( $raw ) {
 	try {
 		$dt = new DateTime( $raw, new DateTimeZone( 'America/Los_Angeles' ) );
@@ -41,7 +39,6 @@ $v = wp_parse_args(
 
 	<section class="nk9-hero">
 		<div class="nk9-container nk9-hero__inner">
-			<img class="nk9-hero__logo" src="<?php echo esc_url( $logo_url ); ?>" alt="Nitro K-9 LLC" />
 			<p class="nk9-hero__eyebrow">Nitro K-9 LLC Presents</p>
 			<h1 class="nk9-hero__title">Art of the Leash <span>Clip Contest</span></h1>
 			<p class="nk9-hero__dates"><?php echo esc_html( $entry_start_display ); ?> &ndash; <?php echo esc_html( $entry_end_display ); ?> (Pacific Time)</p>

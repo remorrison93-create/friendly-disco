@@ -73,11 +73,6 @@
 	background-image: radial-gradient(circle at 50% 0%, #333 0%, var(--nk9-black) 60%);
 }
 
-.nk9-hero__logo {
-	max-width: 160px;
-	margin: 0 auto 24px;
-}
-
 .nk9-hero__eyebrow {
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
